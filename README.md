@@ -9,5 +9,6 @@ sudo systemctl restart apache2,sudo ufw app list,sudo ufw app info "Apache Full"
 
 From the command line i have used the iproute2 tools to get the address by typing this command:
 
-ip addr show | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+ip addr show | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'.
+
 After finding the address,i took the address and paste it on the browser to get the default Ubuntu 16.04 Apache web page.
