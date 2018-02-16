@@ -24,13 +24,18 @@ sudo nano /etc/apache2/mods-enabled/dir.conf
 
 It will look like this:
 
+<IfModule mod_dir.c>
+
       DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+      
 </IfModule>
 
 We want to move the PHP index file highlighted above to the first position after the DirectoryIndex specification, like this:
 
 <IfModule mod_dir.c>
-     DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+      
+    DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+    
 </IfModule>
 
 When you are finished, save and close the file by pressing Ctrl-X. You'll have to confirm the save by typing Y and then hit Enter to confirm the file save location.
