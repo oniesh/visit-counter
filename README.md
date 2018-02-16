@@ -24,7 +24,7 @@ sudo nano /etc/apache2/mods-enabled/dir.conf
 
 It will look like this:
 
-<IfModule mod_dir.c>
+<IfModule mod_ir.c>
       DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
 </IfModule>
 
