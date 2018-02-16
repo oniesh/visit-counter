@@ -60,7 +60,6 @@ http://your_server_IP_address/info.php
 
 This is the code that i have used in counter.php
 <?php
-
 /* counter */
 
 //opens countlog.txt to read the number of hits
@@ -77,4 +76,10 @@ $datei = fopen("/countlog.txt","w");
 fwrite($datei, $count);
 fclose($datei);
 
+?>
+
+This is the code that i have used for info.php
+
+<?php
+phpinfo();
 ?>
