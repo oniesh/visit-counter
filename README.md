@@ -34,7 +34,7 @@ We want to move the PHP index file highlighted above to the first position after
 
 <IfModule mod_dir.c>
       
-    DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+      DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
     
 </IfModule>
 
